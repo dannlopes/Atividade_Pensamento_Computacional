@@ -52,7 +52,50 @@ Implementação de algoritmos para:
     *   *Fail-Safe Defaults:* Por padrão, nenhum usuário tem acesso a módulos sensíveis sem autenticação explícita.
 
 ---
+```mermaid
+classDiagram
+    class Usuario {
+        +int id
+        +string nome
+        +string email
+        +login()
+        +logout()
+    }
 
+    class Aluno {
+        +string matricula
+        +float mediaGeral
+        +consultarNotas()
+        +verSugestoesIA()
+    }
+
+    class Professor {
+        +string funcional
+        +string departamento
+        +lancarNota(aluno, disciplina, valor)
+        +registrarFrequencia()
+    }
+
+    class Disciplina {
+        +int id
+        +string nome
+        +int cargaHoraria
+        +list notas
+    }
+
+    class MotorIA {
+        +analisarDesempenho(aluno)
+        +gerarRecomendacao(aluno)
+    }
+
+    Usuario <|-- Aluno : Herança
+    Usuario <|-- Professor : Herança
+    Professor "1" --> "n" Disciplina : Leciona
+    Aluno "n" --> "n" Disciplina : Matriculado
+    MotorIA ..> Aluno : Processa Dados
+    MotorIA ..> Disciplina : Analisa Requisitos
+```
+---
 ### 📂 Estrutura do Repositório
 *   `README.md`: Documentação principal.
 *   `Design.md`: Detalhamento dos diagramas e abstrações.
