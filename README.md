@@ -38,6 +38,11 @@ Para a construção deste portfólio acadêmico, utilizei os 4 pilares do Pensam
 
 ---
 
+## 🛠️ Atividade: Tratamento de Erros e Avaliação de Soluções
+**Objetivo:** Identificar vulnerabilidades no protótipo acadêmico, aplicar correções estruturadas e avaliar a robustez do software frente a dados inconsistentes.
+
+---
+
 ## 👤 Autor
 **Daniel Lopes Aguiar** *Estudante de Análise e Desenvolvimento de Sistemas - UDF* *Founder na A4 Soluções Digitais*
 
